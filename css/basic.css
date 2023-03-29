@@ -55,7 +55,7 @@ body {
 /* Start hello Section */
 .hello_section {
     /* background-image: url("images/hello_section.jpeg"); */
-    background-image: url("/images/hello_section_1.jpeg");
+    background-image: url("../images/hello_section_1.jpeg");
     background-size: cover;
     height: 434px;
     height: 700px;
