@@ -14,17 +14,435 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
+    <style>
+        /* Start Variables */
+:root {
+    --main-color: #19C8FA;
+    --secondary-color:  ;
+    --color-background: #126377;
+    --transparent-color: rgb(15 116 143 / 70%);
     
+
+}
+/* End  Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work SanS', sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Screen Small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Components */
+ /* img {
+    width: 40px;
+    height: 40px;
+ } */
+
+/* End Components */
+body {
+    background-color: #fff;
+}
+/* Start hello Section */
+.hello_section {
+    /* background-image: url("https://cmsplus.kau.edu.sa/Images/836/images/hello_section.jpeg"); */
+    background-image: url("https://cmsplus.kau.edu.sa/Images/836/images/hello_section_1.jpeg");
+    background-size: cover;
+    height: 434px;
+    height: 700px;
+}
+/*End  hello Section */
+/* Start Section One */
+.section_01 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section_01 .container {
+    display: flex;
+}
+@media (max-width: 991px) {
+    .section_01 .container {
+        flex-direction: column;
+    }
+}
+.section_01 .container .general-director {
+    width: calc(100% - 400px);
+    width: 20%;
+    text-align: center;
+   background-color: #ebebeb;
+   background-color: #75593d;
+   background-color: #854030;
+   background-color: #008f2b;
+   background-color: #26803d;
+   border-radius: 5px;
+   border: 2px solid #777;
+   background-color: #ebebeb;
+   align-self: flex-start;
+   margin-top: 42px;
+}
+@media (max-width: 991px) {
+    .section_01 .container {
+        flex-direction: column;
+    }
+    .section_01 .container .general-director {
+        width: 100%;
+        order: 2;
+    }
+}
+.section_01 .container .general-director img {
+    width: 155px;
+    height: 170px;
+    width: 100%;
+    max-width: 100%; /* ملاحظة هنا   */
+    /* border-radius: 5px; */
+    /* border-bottom: 1px solid  #777; */
+   
+}
+.section_01 .container .general-director .info { 
+    color: white;
+    color: #3a2e2e;
+}
+.section_01 .container .general-director .info h1 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+.section_01 .container .general-director .info p {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.section_01 .container .general-director .info a {
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    background-color: #777;
+    background-color: #008f2b;
+    background-color: #5e8557;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: inline-block;
+    color: black;
+    margin-bottom: 10px;
+}
+.section_01 .container .general-director .info a:hover {
+    background-color: #854030;
+    background-color: #ba915e;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 5px;;
+}
+.section_01 .container .abstract {
+    width: 80%;
+    display: flex;
+    margin-left: 20px;
+   /* background-color: red; */
+}
+@media (max-width: 991px) {
+    .section_01 .container .abstract {
+        justify-content: center;
+        order: 0;
+    }
+}
+.section_01 .container .abstract img {
+    width: 50px;
+    height: 50px;
+    
+}
+.section_01 .container .abstract .text {
+
+}
+.section_01 .container .abstract .text h1 {
+    font-size: 30px;
+    margin-top: 3px;
+    margin-right: 10px;
+    padding-bottom: 1px;
+    width: fit-content;
+    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #854030;
+}
+.section_01 .container .abstract .text h1::after {
+    /* content: '';
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 4px;
+    background: #e66b2e; */
+}
+.section_01 .container .abstract .text p {
+    line-height: 2.5;
+    font-size: 20px;
+}
+/*End  Section One */
+/* Start Section Two */
+.section_02 { 
+    background-color: rgb(241, 234, 234);
+    background-color:#262626;
+    background-color:#616361;
+    background-color:#9e9e9e;
+    background-color:#9e9e9e;
+    background-color: #ebebeb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section_02 .container {
+    display: flex;
+}
+.section_02 .container img {
+    width: 50px;
+    height: 50px;
+}
+.section_02 .container .text { 
+
+}
+.section_02 .container .text h1 {
+    font-size: 30px;
+    color: white;
+    color: #1c2e61;
+    color: #262626;
+    color: black;
+    margin-top: 3px;
+    margin-right: 10px;
+    padding-bottom: 2px;
+    width: fit-content;
+    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #e66b2e;
+    border-bottom: 2px solid #854030;
+  
+}
+.section_02 .container .text ul { 
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;  
+}
+.section_02 .container .text ul li {
+    color: #008f2b;
+    color: #1c2e61;
+    color: #262626;
+    color: black;
+    line-height: 2;
+    font-size: 20px;
+  
+    position: relative;
+}
+.section_02 .container .text ul li::before {
+    content: " ";
+    border-top: 5px solid #854030;
+    border-bottom: 5px solid #854030;
+    border-right: 5px solid #854030;
+    border-left: 5px solid #854030;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    /* content: '\F111';
+    content: " ";
+    background-image: url(../images/target-3.png);
+    background: url(../images/target-3.png);
+    width: 30px;
+    height: 30px; */
+}
+/* End Section Two  */
+/* Start section_03 */
+.section_03 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section_03 .container .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_03 .container .services .serv {
+    text-align: center;
+    width: 400px;
+   transition: 0.5s;
+   padding: 10px;
+}
+.section_03 .container .services .serv:hover {
+    border: 2px solid #ddd;
+    background-color: #e66b2e;
+    background-color: #854030;
+    border-radius: 5px;;
+    cursor: pointer;
+}
+.section_03 .container .services .serv:hover .text p {
+    color: white;
+}
+.section_03 .container .services .serv img {
+    width: 100px;
+    height: 100px;
+}
+.section_03 .container .services .serv .text p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* End  section_03 */
+/* Start section_04 */
+.section_04 {
+    background-color:#262626;
+    background-color:#ebebeb;
+    background-color:#9e9e9e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section_04 .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 120px;
+    padding: 0px 50px;
+    color: white;
+}
+
+.section_04 .content .logo {
+    color: white;
+    /* color: black; */
+    font-weight: bold;
+    text-align: center;
+    background-color:#e66b2e;
+    background-color:#854030;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+@media(max-width: 991px) {
+    .section_04 .content .logo {
+        width: 100%;
+    }
+}
+.section_04 .content .contact-us {
+    margin-bottom: 10px;
+}
+.section_04 .content .contact-us .location-img,
+.section_04 .content .contact-us .telephone-img,
+.section_04 .content .contact-us .e-mail-img,
+.section_04 .content .contact-us .post-box-img {
+    margin-bottom: 20px;
+} 
+.section_04 .content .contact-us .location-img img,
+.section_04 .content .contact-us .telephone-img img,
+.section_04 .content .contact-us .e-mail-img img,
+.section_04 .content .contact-us .post-box-img img {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+.section_04 .content .contact-us .location-img span,
+.section_04 .content .contact-us .telephone-img span,
+.section_04 .content .contact-us .e-mail-img span,
+.section_04 .content .contact-us .post-box-img span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.section_04 .content .follow-us .twitter-icon,
+.section_04 .content .follow-us .instagram-icon,
+.section_04 .content .follow-us .snapchat-icon {
+    margin-bottom: 30px;
+} 
+.section_04 .content .follow-us .twitter-icon img,
+.section_04 .content .follow-us .instagram-icon img,
+.section_04 .content .follow-us .snapchat-icon img {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+.section_04 .content .follow-us .twitter-icon a,
+.section_04 .content .follow-us .instagram-icon a,
+.section_04 .content .follow-us .snapchat-icon a {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.section_04 .content .Related-sites h1  {
+ font-size: 30px;
+ color: white;
+  margin-top: 4px;
+  padding-bottom: 10px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #e66b2e;
+  border-bottom: 2px solid #854030;
+}
+
+.section_04 .content .Related-sites h1::before {
+    /* content: " ";
+    display: block;
+    text-align: center;
+    width: 80%;;
+    height: 3px;
+    background-color: #ddd;
+   position: absolute;
+   bottom: 0; */
+}
+
+.section_04 .content .Related-sites ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    list-style-type: none;
+}
+.section_04 .content .Related-sites ul li { 
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+.section_04 .content .Related-sites ul li::after {
+    content: " ";
+    border-top: 5px solid #854030;
+    border-bottom: 5px solid #854030;
+    border-right: 5px solid #854030;
+    border-left: 5px solid #854030;
+    position: absolute;
+    right: 0;
+}
+/* End section_04 */
+/*  */
+    </style>
 </head>
 <body dir="rtl">
 <div class="hello_section">
-    <!-- <img src="images/hello_section.jpeg" alt="Hello Section Image" /> -->
+    <!-- <img src="https://cmsplus.kau.edu.sa/Images/836/images/hello_section.jpeg" alt="Hello Section Image" /> -->
 </div>
 <div class="section_01">
     <div class="container">
         <h1 class="separator"></h1>
         <div class="abstract">
-            <img src="images/briefing.png"  alt="Abstract" />
+            <img src="https://cmsplus.kau.edu.sa/Images/836/images/briefing.png"  alt="Abstract" />
             <div class="text">
                 <h1>نبذه عن حوكمة قطاعة الأعمال والاستثمار
                   
@@ -33,9 +451,9 @@
             </div>
         </div>
         <div class="general-director">
-            <img src="images/Eng.Hamad_Al-Mutani.jpeg" alt="General Director Picture" />
+            <img src="https://cmsplus.kau.edu.sa/Images/836/images/Eng.Hamad_Al-Mutani.jpeg" alt="General Director Picture" />
             <div class="info">
-                <h1>المدير العام</h1>
+                <h1>المشرف العام</h1>
                 <p>م. حمد محمد المعطاني</p>
                 <a href="#">للمزيد</a>
             </div>
@@ -44,7 +462,7 @@
 </div>
 <div class="section_02">
     <div class="container">
-        <img src="images/iteration.png" alt="" />
+        <img src="https://cmsplus.kau.edu.sa/Images/836/images/iteration.png" alt="" />
         <div class="text">
             <h1>نطاق الإدارة العامة لحوكمة قطاع الأعمال والاستثمار</h1>
             <ul>
@@ -61,35 +479,35 @@
     <div class="container">
         <div class="services">
             <div class="serv">
-                <img src="images/connect.png" alt="Related sectors" />
+                <img src="https://cmsplus.kau.edu.sa/Images/836/images/connect.png" alt="Related sectors" />
                 <div class="text">
                     <p>القطاعات ذات العلاقة</p>
                     <a></a>
                 </div>
             </div>
             <div class="serv">
-                <img src="images/policy.png" alt="Procedures and Policies" />
+                <img src="https://cmsplus.kau.edu.sa/Images/836/images/policy.png" alt="Procedures and Policies" />
                 <div class="text">
                     <p>الإجراءات والسياسات</p>
                     <a></a>
                 </div>
             </div>
             <div class="serv">
-                <img src="images/kpi.png" alt="Performance Indicators " />
+                <img src="https://cmsplus.kau.edu.sa/Images/836/images/kpi.png" alt="Performance Indicators " />
                 <div class="text">
                     <p>مؤشرات قياس الأداء</p>
                     <a></a>
                 </div>
             </div>
             <div class="serv">
-                <img src="images/business-report.png" alt="Periodic Reports" />
+                <img src="https://cmsplus.kau.edu.sa/Images/836/images/business-report.png" alt="Periodic Reports" />
                 <div class="text">
                     <p>التقارير الدورية</p>
                     <a></a>
                 </div>
             </div>
             <div class="serv">
-                <img src="images/hierarchical-structure.png" alt="Aministrative Structure" />
+                <img src="https://cmsplus.kau.edu.sa/Images/836/images/hierarchical-structure.png" alt="Aministrative Structure" />
                 <div class="text">
                     <p>الهيكل الإداري</p>
                     <a></a>
@@ -107,39 +525,39 @@
     </div>
     <div class="contact-us">
         <div class="location-img">
-            <img src="images/map.png" alt="Location-img" />
+            <img src="https://cmsplus.kau.edu.sa/Images/836/images/map.png" alt="Location-img" />
             <span>مبنى الادارة العليا - نائب رئيس الجامعة للأعمال والإبداع المعرفي</span>
         <!-- <i class="fa-thin fa-phone-office" style="color: #000000;"></i> -->
         </div>
         <div class="telephone-img">
-            <img src="images/telephone-4.png" alt=" Telephone Image" />
+            <img src="https://cmsplus.kau.edu.sa/Images/836/images/telephone-4.png" alt=" Telephone Image" />
             <span> 012-6952000</span>
         
         </div>
         <!-- <i class="fa-thin fa-square-envelope" style="color: #000000;"></i> -->
         <div class="e-mail-img">
             
-           <img src="images/open-email.png" alt="E-mai Image" />
+           <img src="https://cmsplus.kau.edu.sa/Images/836/images/open-email.png" alt="E-mai Image" />
            <span>hmalhuthali@kau.edu.sa</span>
         </div>
         <div class="post-box-img">
-            <img src="images/mail-box.png" alt="Post Box Images" />
+            <img src="https://cmsplus.kau.edu.sa/Images/836/images/mail-box.png" alt="Post Box Images" />
             <span>ص.ب: 80200 جدة 21589</span>
         </div>
       
     </div>
     <div class="follow-us">
        <div class="twitter-icon">
-        <img src="images/twitter.png" alt="Twitter Icon" />
-        <span>https://twitter.com/UserName</span>
+        <img src="https://cmsplus.kau.edu.sa/Images/836/images/twitter.png" alt="Twitter Icon" />
+        <a>@UserName</a>
        </div>
        <div class="instagram-icon">
-        <img src="images/instagram.png" alt="Instagram Icon" />
-        <span>https://Instagram.com/UserName</span>
+        <img src="https://cmsplus.kau.edu.sa/Images/836/images/instagram.png" alt="Instagram Icon" />
+        <a>@UserName</a>
        </div>
        <div class="snapchat-icon">
-        <img src="images/snapchat.png" alt="Snapchat Icon" />
-        <span>https://wwwsnapchat.com/UserName</span>
+        <img src="https://cmsplus.kau.edu.sa/Images/836/images/snapchat.png" alt="Snapchat Icon" />
+        <a>@UserName</a>
        </div>
     </div>
    <!-- <div class="Related-sites">
