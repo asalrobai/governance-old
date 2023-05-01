@@ -56,10 +56,15 @@
         /* Start hello Section */
         .hello_section {
             /* background-image: url("https://cmsplus.kau.edu.sa/Images/836/images/hello_section.jpeg"); */
-            background-image: url("../images/hello_section_1.jpeg");
-            background-size: cover;
+                /* background-image: url("../images/hello_section_1.jpeg");
+                background-image: url("../images/hello_section_Eid_Mobark.png"); */
+            /* background-size: cover;
             height: 434px;
-            height: 700px;
+            max-height: 700px; */
+        }
+        .hello_section img {
+           width: 100%;
+            max-height: 600px;
         }
         /*End  hello Section */
         /* Start Section One */
@@ -116,6 +121,7 @@
             margin-top: 15px;
             margin-bottom: 0;
             font-size: 30px;
+            background-color: #ddd;
         }
         .section_01 .container .general-director .info p {
             margin-top: 0;
@@ -172,6 +178,7 @@
             width: fit-content;
             border-bottom: 2px solid #ddd;
             border-bottom: 2px solid #854030;
+           
         }
         .section_01 .container .abstract .text h1::after {
             /* content: '';
@@ -303,7 +310,6 @@
             padding-top: 30px;
             padding-bottom: 30px;
         }
-        
         .section_04 .content {
             display: flex;
             flex-wrap: wrap;
@@ -312,7 +318,6 @@
             padding: 0px 50px;
             color: white;
         }
-        
         .section_04 .content .logo {
             color: white;
             /* color: black; */
@@ -328,10 +333,23 @@
         @media(max-width: 991px) {
             .section_04 .content .logo {
                 width: 100%;
+                
             }
         }
         .section_04 .content .contact-us {
             margin-bottom: 10px;
+            border-right: 3px solid #E6F2F1;
+            padding-right: 40px;
+        }
+        @media(max-width: 991px) {
+            .section_04 .content .contact-us {
+                margin-bottom: 10px;
+                border-right: none;
+                border-bottom: 3px solid #E6F2F1;
+                border-top: 3px solid #E6F2F1;
+                padding-top: 20px;
+                padding-right: 40px;
+            }
         }
         .section_04 .content .contact-us .location-img,
         .section_04 .content .contact-us .telephone-img,
@@ -346,13 +364,42 @@
             vertical-align: middle;
             width: 50px;
             height: 50px;
+          
         }
+        .section_04 .content .contact-us .location-img .Vertical-separator,
+        .section_04 .content .contact-us .telephone-img .Vertical-separator,
+        .section_04 .content .contact-us .e-mail-img .Vertical-separator,
+        .section_04 .content .contact-us .post-box-img .Vertical-separator
+         {
+            color: white;
+            height: 2px;
+            background-color: rgb(92, 91, 91);
+            width: 2px;
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 20px 0px;
+        }
+       
         .section_04 .content .contact-us .location-img span,
         .section_04 .content .contact-us .telephone-img span,
         .section_04 .content .contact-us .e-mail-img span,
         .section_04 .content .contact-us .post-box-img span {
             font-weight: bold;
             margin-right: 10px;
+        }
+        .section_04 .content .follow-us {
+            border-right: 3px solid #E6F2F1;
+            padding-right: 40px;
+        }
+        @media (max-width: 991px) {
+            .section_04 .content .follow-us {
+                border-right: none;
+                
+            }
+            
         }
         .section_04 .content .follow-us .twitter-icon,
         .section_04 .content .follow-us .instagram-icon,
@@ -365,6 +412,22 @@
             vertical-align: middle;
             width: 50px;
             height: 50px;
+        }
+        .section_04 .content .follow-us .twitter-icon .Vertical-separator,
+        .section_04 .content .follow-us .instagram-icon .Vertical-separator,
+        .section_04 .content .follow-us .snapchat-icon .Vertical-separator,
+        .section_04 .content .contact-us .post-box-img .Vertical-separator
+         {
+            color: white;
+            height: 2px;
+            background-color: rgb(26, 25, 25);
+            width: 2px;
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 20px 0px;
         }
         .section_04 .content .follow-us .twitter-icon a,
         .section_04 .content .follow-us .instagram-icon a,
